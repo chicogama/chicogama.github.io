@@ -1,0 +1,20 @@
+.img-job img {
+    width: 10rem;
+    height: 8rem;
+}
+
+.desc {
+    padding: 20px;
+    margin: 0;
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.3);
+}
+
+.desc h5 {
+    font-size: 0.8em;
+}
+
+.desc p {
+    font-size: 0.8em;
+}

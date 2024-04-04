@@ -1,0 +1,28 @@
+#tec-content p {
+    text-align: justify;
+}
+
+.breadcrumb {
+    margin: 30px 30px;
+}
+
+.breadcrumb ol {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.breadcrumb a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: #474747;
+}
+
+#tecs-img img {
+    width: 100%;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: rgba(192, 192, 192, 0.3);
+}

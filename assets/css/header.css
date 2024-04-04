@@ -1,0 +1,52 @@
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.nav-link {
+    color: #4FA095;
+}
+
+.nav-item>a:hover {
+    color: #4FA095;
+}
+
+.navbar-nav>.active>a {
+    border-radius: 5px;
+    background-color: #C0C0C0;
+    color: #4FA095;
+}
+
+.navbar a {
+    font-family: 'Cou-prime' normal;
+    color: #f9f9f9;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+#btn-contact {
+    color: #f9f9f9;
+    background-color: #4FA095;
+    border-color: #BAD1C2;
+    text-shadow: 1px 1px #aaaa;
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+#btn-contact:hover {
+    background-color: #aaa;
+    transform: scale(1.02);
+    transition: .2s;
+}
+
+#nome {
+    padding-top: 30px;
+    color: #ffff;
+    text-shadow: 1px 1px #aaaa;
+    font-family: 'Ubuntu';
+    font-weight: bolder;
+    font-size: 30px;
+}

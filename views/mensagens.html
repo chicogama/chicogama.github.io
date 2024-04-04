@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- cOnjunto de caracteres -->
+    <meta charset="UTF-8">
+    <!-- permite a página se adaptar e manter a escala quando a página é redmensionada -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importa estilos e plugins -->
+
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+    <link rel="shortcurt icon" type="imagem/png" href="./assets/keyboard-regular.svg">
+
+    <title>Mensagens</title>
+</head>
+
+<body onload="mensagem.listarMsg()">
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(rgba(0,0,0,6), transparent);">
+            <div class="container-fluid d-flex justify-content-center">
+                <a class="navbar-brand pt-3 px-5" id="nome" href="../index.html"><i class="fa-solid fa-terminal"></i> CHICOGAMA</a>
+
+                <!--Responsive button-->
+                <div class="container-fluid d-flex justify-content-center">
+                    <button class="navbar-toggler mt-0 text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon rounded border border-light p-1"><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                    <!--End esponsive button-->
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-end px-5 pt-3" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav d-flex justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex justify-content-center" aria-current="page" href="../index.html"><i class="fa-solid fa-house p-1"></i>PRINCIPAL </a>
+                            <span class="sr-only">
+                        (current)
+                    </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End Header-->
+
+    <!--Main-->
+    <main>
+        <section id="sobre">
+            <div class="my-content col-10">
+                <div class="container">
+                    <div class="row">
+                        <div id="tittle" class="col-12 pt-3">
+                            <h1>Minhas Mensagens</h1>
+                        </div>
+                        <div class="container">
+                            <div id="about-me" class="row d-flex">
+                                <table>
+                                    <thead>
+                                        <th class="center"> NOME</th>
+                                        <th class="center">EMAIL</th>
+                                        <th class="center">MENSAGEM</th>
+                                        <th class="center">AÇÕES</th>
+                                    </thead>
+                                    <tbody id="tbody">
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <button onclick="mensagem.limparMsg()" type="submit" class="btn btn-secondary">Limpar Mensagens<i class="fa-solid fa-trash-can mx-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!--End main-->
+
+    <!--Footer-->
+
+    <footer class="text-center text-white pt-2" id="foot" style="background-color: rgba(79, 160, 149, 0.7); ">
+        <div class="text-center text-light p-2">
+            Minhas mídias sociais
+        </div>
+        <!-- Grid -->
+        <div class="socials d-flex justify-content-center">
+            <!-- Github -->
+            <a class="btn btn-link btn-floating btn-lg text-light px-2" style="font-size: 1.7rem;" href="https://github.com/chicogama " target="_blank " role="button "><i class="fa-brands fa-square-github "></i></a>
+            <!-- Linkedin -->
+            <a class="btn btn-link btn-floating btn-lg text-light px-2" style="font-size: 1.7rem;" href="https://www.linkedin.com/in/josemar-gama/ " target="_blank " role="button "><i class="fa-brands fa-linkedin "></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-light px-2" style="font-size: 1.7rem;" href="https://www.instagram.com/chicogama.sh/ " target="_blank " role="button "><i class="fa-brands fa-square-instagram "></i></a>
+            <!--Social media -->
+        </div>
+        <!-- Grid-->
+
+        <!-- Copy -->
+        <div class="text-center text-light p-1 " style="background-color: #153462; ">
+            Todos os direitos reservados Josemar Gama®
+        </div>
+    </footer>
+    <!--End footer-->
+
+    <!--Scripts-->
+    <script src="../assets/jquery/jquery-3.6.1.min.js "></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js "></script>
+    <script src="../assets/fontawesome/js/all.js "></script>
+    <script src="../assets/js/particles.min.js "></script>
+    <script src="../assets/js/script.js "></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--End Scripts-->
+</body>
+
+</html>

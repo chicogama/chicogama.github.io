@@ -6,9 +6,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #2d333bf2;
 }
 
-section:nth-of-type(1) {
+/* section:nth-of-type(1) {
     background: url(../../assets/img/cool-background3.png) no-repeat center center fixed;
     background-size: cover;
 }
@@ -36,7 +37,7 @@ section:nth-of-type(5) {
 section:nth-of-type(6) {
     background: url(../../assets/img/blur.jpg) no-repeat center center fixed;
     background-size: cover;
-}
+} */
 
 .my-content {
     border-radius: 8px;

@@ -27,6 +27,16 @@ export function route(path, handler) {
   routes.push({ regex, paramNames, handler });
 }
 
+// Alias de uma rota antiga para uma nova (ex.: seções que foram
+// incorporadas em outra) — atualiza o hash em vez de só reaproveitar o
+// mesmo conteúdo, para que a URL e o item ativo do nav fiquem corretos.
+export function redirect(path, to) {
+  route(path, () => {
+    location.hash = to;
+    return '';
+  });
+}
+
 function currentPath() {
   const hash = location.hash.replace(/^#/, '');
   return hash || '/inicio';

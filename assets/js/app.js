@@ -1,23 +1,24 @@
-import { route, startRouter } from './router.js';
+import { route, redirect, startRouter } from './router.js';
 import { renderHome } from './views/home.js';
-import { renderAbout } from './views/about.js';
-import { renderEducation } from './views/education.js';
-import { renderExperience } from './views/experience.js';
 import { renderProjectsList, renderProjectDetail } from './views/projects.js';
 import { renderStudiesList, renderStudyDetail } from './views/studies.js';
 import { renderCV } from './views/cv.js';
 import { renderContact } from './views/contact.js';
 
 route('/inicio', renderHome);
-route('/sobre', renderAbout);
-route('/formacao', renderEducation);
-route('/atuacao', renderExperience);
 route('/projetos', renderProjectsList);
 route('/projetos/:slug', renderProjectDetail);
 route('/estudos', renderStudiesList);
 route('/estudos/:slug', renderStudyDetail);
 route('/curriculo', renderCV);
 route('/contato', renderContact);
+
+// Sobre virou parte de Início; Formação e Atuação viraram seções dentro
+// de Currículo (mesmos dados, ver assets/js/views/cv.js) — mantidos como
+// redirecionamento para não quebrar um link antigo.
+redirect('/sobre', '#/inicio');
+redirect('/formacao', '#/curriculo');
+redirect('/atuacao', '#/curriculo');
 
 const outlet = document.getElementById('main-content');
 const navLinks = Array.from(document.querySelectorAll('[data-route]'));

@@ -4,6 +4,24 @@
   em prompts, links e estados de foco/hover, nunca em blocos grandes.
 */
 
+/*
+  Fira Code — chrome de terminal (prompts, títulos de seção, nav, tags).
+  Fonte variável (um único arquivo cobre os pesos 400–700), auto-hospedada
+  a partir do Google Fonts para não depender de CDN em runtime. Escolhida
+  no lugar da Courier Prime por ser desenhada para código: mais elegante
+  e legível em tamanhos pequenos, com ligaduras discretas (calt) que dão
+  um toque de editor de código sem exagerar no "cosplay de terminal".
+*/
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fonts/FiraCode-Variable.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Courier Prime some como fallback local — mantém o "clique" de máquina
+   de escrever caso a Fira Code falhe em carregar, sem depender de rede. */
 @font-face {
   font-family: "Courier Prime";
   src: url("../fonts/CourierPrime-Regular.ttf") format("truetype");
@@ -16,13 +34,6 @@
   src: url("../fonts/CourierPrime-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Courier Prime";
-  src: url("../fonts/CourierPrime-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
   font-display: swap;
 }
 @font-face {
@@ -80,7 +91,7 @@
   --accent-red: #e08a8a;
 
   /* tipografia */
-  --font-mono: "Courier Prime", "SFMono-Regular", Consolas, monospace;
+  --font-mono: "Fira Code", "Courier Prime", "SFMono-Regular", Consolas, monospace;
   --font-sans: "Ubuntu", "Segoe UI", sans-serif;
 
   /* espaçamento */

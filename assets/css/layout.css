@@ -143,6 +143,18 @@
 
 .term-body {
   padding: var(--space-5);
+  /* piso de altura para as páginas-janela: evita que conteúdo curto
+     (ex.: Contato, um Estudo com pouco texto) vire um retângulo pequeno
+     boiando no meio da página — a proporção fica sempre parecida. */
+  min-height: clamp(18rem, 52vh, 30rem);
+}
+
+/* Divisória entre "comandos" dentro da mesma janela de terminal
+   (ex.: whoami seguido de cat sobre.md na página Início) */
+.term-rule {
+  border: none;
+  border-top: 1px solid var(--border-soft);
+  margin: var(--space-6) 0;
 }
 
 .view {
@@ -200,5 +212,9 @@
 
   #main-content {
     padding: var(--space-5) var(--space-3) var(--space-7);
+  }
+
+  .term-body {
+    min-height: clamp(14rem, 46vh, 22rem);
   }
 }

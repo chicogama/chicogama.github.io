@@ -1,0 +1,103 @@
+/*
+  Design tokens — tema único, escuro, inspirado em terminal + Dracula,
+  porém dessaturado ("Dracula suave"): os tons de destaque só aparecem
+  em prompts, links e estados de foco/hover, nunca em blocos grandes.
+*/
+
+@font-face {
+  font-family: "Courier Prime";
+  src: url("../fonts/CourierPrime-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Courier Prime";
+  src: url("../fonts/CourierPrime-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Courier Prime";
+  src: url("../fonts/CourierPrime-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* superfícies */
+  --bg: #212330;
+  --bg-raised: #282a39;
+  --bg-panel: #2b2e40;
+  --bg-inset: #1b1c27;
+  --border: #3c3f56;
+  --border-soft: #33364a;
+
+  /* texto */
+  --fg: #e7e7ea;
+  --fg-dim: #b7b9c9;
+  --muted: #888ca3;
+
+  /* acentos (dessaturados a partir da paleta Dracula) */
+  --accent-purple: #ad9adb;
+  --accent-purple-dim: #8b7cb0;
+  --accent-green: #83d6a0;
+  --accent-pink: #e19fc4;
+  --accent-cyan: #8fd0e6;
+  --accent-yellow: #e0dc9f;
+  --accent-red: #e08a8a;
+
+  /* tipografia */
+  --font-mono: "Courier Prime", "SFMono-Regular", Consolas, monospace;
+  --font-sans: "Ubuntu", "Segoe UI", sans-serif;
+
+  /* espaçamento */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --shadow-window: 0 12px 32px -12px rgba(0, 0, 0, 0.55);
+
+  --content-width: 62rem;
+}

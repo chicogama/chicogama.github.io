@@ -6,3 +6,7 @@ v0.5 Navegação
 v0.6 Paginação, cards
 v0.7 Potifolio, Contato, Formação, atuação
 v0.8 Salvando mensagens, breadcrumbs, prevenção de erros
+v1.0 Redesign: SPA única com roteamento por hash (sem Bootstrap/jQuery/FontAwesome/particles.js),
+     tema terminal + Dracula suave, Projetos/Estudos/Currículo movidos para dado mockado em JSON
+     (data/projects.json, data/studies.json, data/cv.json), páginas soltas de views/ absorvidas
+     como rotas internas. Ver docs/redesign-spec.md e docs/adr/.

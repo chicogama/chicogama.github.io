@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "name": "Josemar Ferreira Gama",
+    "role": "Desenvolvedor Web",
+    "skills": ["HTML5", "CSS3", "JavaScript", "Angular"]
+  },
+  "education": [
+    { "title": "Tec. em Redes de Computadores", "org": "Faculdade de Macapá", "period": "2014-2017" },
+    { "title": "Bac. Ciência da Computação", "org": "Uni. Federal do Amapá", "period": "2018-2023" },
+    { "title": "Adm. Redes de Computadores", "org": "SENAI Amapá", "period": "2019-2019" },
+    { "title": "CCNA R&S: Módulo I", "org": "NetAcad", "period": "2018-2018" },
+    { "title": "CCNA R&S: Módulo II", "org": "NetAcad", "period": "2018-2018" },
+    { "title": "CCNA R&S: Módulo II", "org": "NetAcad", "period": "2019-2019" }
+  ],
+  "experience": [
+    { "title": "Estagiário", "org": "Justiça Federal do Amapá", "period": "06/2019 - 09/2020", "description": "Infraestrutura e serviços de rede, suporte." },
+    { "title": "Técnico em Microinformática", "org": "Dividata Processamento de Dados LTDA.", "period": "09/2020 - 03/2022", "description": "Infraestrutura e serviços de rede, suporte. Prestador de serviços ao TRF1." },
+    { "title": "Analista de Suporte 2º Nível", "org": "Lanlink Serviços de Informática LTDA.", "period": null, "description": "Suporte, infraestrutura de redes." }
+  ],
+  "download": "./assets/docs/Josemar Gama Curriculum Vitae.pdf"
+}

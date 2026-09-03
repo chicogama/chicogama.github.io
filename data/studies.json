@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "python",
+    "title": "Python",
+    "summary": "Linguagem de alto nível, interpretada, multi-paradigma.",
+    "description": "Python é uma linguagem de programação de alto nível, interpretada, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Lançada por Guido van Rossum em 1991, hoje tem desenvolvimento comunitário aberto gerenciado pela Python Software Foundation. CPython é a implementação de referência.",
+    "image": "./assets/img/python2.jpg",
+    "video": "https://www.youtube.com/embed/uOgDa1rlqjE"
+  },
+  {
+    "slug": "html5",
+    "title": "HTML5",
+    "summary": "Quinta versão da linguagem de marcação da Web.",
+    "description": "HTML5 é uma linguagem de marcação para a Web, tecnologia-chave da Internet. Traz novas funcionalidades de semântica e acessibilidade em relação às versões anteriores, com suporte nativo a multimídia, mantendo-se legível por humanos e consistentemente interpretável por máquinas.",
+    "image": "./assets/img/html5.jpg",
+    "video": "https://www.youtube.com/embed/NSmapCNcSyI"
+  },
+  {
+    "slug": "arduino",
+    "title": "Arduino",
+    "summary": "Plataforma de prototipagem eletrônica de hardware livre.",
+    "description": "Arduino é uma plataforma de prototipagem eletrônica de hardware livre e placa única, com microcontrolador Atmel AVR e linguagem própria (derivada de Wiring, essencialmente C/C++). Objetivo: ferramentas acessíveis, de baixo custo, flexíveis e fáceis de usar por iniciantes e profissionais.",
+    "image": "./assets/img/arduino.png",
+    "video": "https://www.youtube.com/embed/sv9dDtYnE1g"
+  }
+]

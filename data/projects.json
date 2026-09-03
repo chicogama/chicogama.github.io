@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "congar",
+    "title": "CongAr",
+    "summary": "Instrumento musical de baixo custo com Arduino para Congas, aplicando conceitos de IoT.",
+    "description": "Projeto de pesquisa desenvolvido por Josemar Ferreira Gama sob orientação do Prof. Msc. Cláudio Rogério Gomes da Silva. Dispositivo com placas microcontroladoras para criação de instrumentos musicais de baixo custo. Usa a IDE Arduino para programar as placas e Python para processar os dados, com comunicação via portas seriais e protocolos UDP/MQTT.",
+    "tech": ["Python", "Arduino"],
+    "image": "./assets/img/CONGAR.png",
+    "links": { "repo": "https://github.com/chicogama/handydrum", "demo": null }
+  },
+  {
+    "slug": "financas",
+    "title": "Finanças",
+    "summary": "Front-end para uma API de lançamentos financeiros.",
+    "description": "Projeto pessoal desenvolvido em conjunto com colegas do curso de Ciência da Computação: uma equipe cuidou do front-end, outra do back-end. Ao final, a aplicação realiza lançamentos financeiros.",
+    "tech": ["HTML5", "CSS3", "JavaScript"],
+    "image": "./assets/img/financasbg.png",
+    "links": { "repo": "https://github.com/chicogama/financas-front-end", "demo": "https://chicogama.github.io/financas-front-end/" }
+  },
+  {
+    "slug": "aprenda-python",
+    "title": "Aprenda Python",
+    "summary": "Plataforma de aprendizado da linguagem Python.",
+    "description": "Projeto iniciado, mas não finalizado. Tem como objetivo reunir conteúdo de aprendizado sobre Python, do básico ao avançado.",
+    "tech": ["HTML5", "CSS3", "JavaScript"],
+    "image": "./assets/img/python.png",
+    "links": { "repo": "https://github.com/chicogama/aprenda-python", "demo": "https://chicogama.github.io/aprenda-python/" }
+  }
+]

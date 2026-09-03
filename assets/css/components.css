@@ -1,0 +1,302 @@
+/* Componentes reutilizáveis */
+
+/* Botões */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--bg);
+  background: var(--accent-green);
+  border: 1px solid var(--accent-green);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-4);
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.btn:hover {
+  text-decoration: none;
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn svg {
+  width: 1em;
+  height: 1em;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--fg-dim);
+  border-color: var(--border);
+}
+
+.btn-ghost:hover {
+  color: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+}
+
+/* Tags de rede social, estilo "flag" de CLI */
+.social-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.social-tags a {
+  color: var(--accent-purple-dim);
+}
+
+.social-tags a:hover {
+  color: var(--accent-pink);
+}
+
+/* Tags de tecnologia/habilidade */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-4);
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  background: var(--bg-inset);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 0.2em 0.6em;
+}
+
+/* Hero (Início) */
+.hero-body {
+  display: flex;
+  gap: var(--space-6);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 220px;
+}
+
+.hero-text .role {
+  color: var(--muted);
+  margin-top: calc(var(--space-3) * -1);
+}
+
+/* Listagem estilo "ls -la": Formação, Projetos, Estudos */
+.dir-listing {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-family: var(--font-mono);
+}
+
+.dir-entry a,
+.dir-listing > li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-1) var(--space-3);
+  padding: var(--space-3);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--fg-dim);
+}
+
+.dir-entry a {
+  transition: background 0.1s ease, border-color 0.1s ease;
+}
+
+.dir-entry a:hover {
+  text-decoration: none;
+  background: var(--bg-inset);
+  border-color: var(--border-soft);
+}
+
+.dir-perm {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.dir-name {
+  color: var(--accent-purple);
+  font-weight: 700;
+}
+
+.dir-summary {
+  grid-column: 2;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+/* Timeline (Atuação, experiência no Currículo) */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  border-left: 2px solid var(--border-soft);
+  padding-left: var(--space-4);
+}
+
+.timeline li {
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--space-4) * -1 - 5px);
+  top: 0.4em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-green);
+}
+
+.timeline .dir-name {
+  display: block;
+}
+
+.timeline .dir-summary {
+  grid-column: auto;
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+/* Breadcrumb simples nas views de detalhe */
+.breadcrumb {
+  font-family: var(--font-mono);
+  color: var(--muted);
+  margin-bottom: var(--space-2);
+}
+
+/* Detalhe de Projeto / Estudo */
+.detail-body {
+  display: grid;
+  grid-template-columns: minmax(180px, 260px) 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.detail-image {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-soft);
+}
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  margin-top: var(--space-4);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .detail-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Formulário de contato */
+.contact-list {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--fg-dim);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 32rem;
+}
+
+label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: var(--space-2);
+}
+
+input,
+textarea {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--fg);
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent-cyan);
+}
+
+textarea {
+  resize: vertical;
+}
+
+form .btn {
+  align-self: flex-start;
+  margin-top: var(--space-2);
+}
+
+.output {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  min-height: 1.2em;
+  margin-top: var(--space-2);
+}
+
+.output-success {
+  color: var(--accent-green);
+}
+
+.output-error {
+  color: var(--accent-red);
+}
